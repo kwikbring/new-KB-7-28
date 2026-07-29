@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="KWIKBRING - Fast local delivery from convenience stores, smoke shops, liquor stores, and local businesses."
+    >
+
+    <title>KWIKBRING | Fast. Local. Delivered.</title>
+
+    <link rel="icon" href="assets/kwikbring-logo.png">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="brand">
+                <img
+                    src="assets/kwikbring-logo.png"
+                    alt="KWIKBRING Logo"
+                >
+            </a>
+
+            <nav class="desktop-nav">
+
+                <a href="#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="#categories">
+                    Categories
+                </a>
+
+                <a href="#business">
+                    For Businesses
+                </a>
+
+                <a href="#drivers">
+                    Become a Driver
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button
+                    class="btn btn-outline"
+                    onclick="openModal('loginModal')"
+                >
+                    Log In
+                </button>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="scrollToSection('download')"
+                >
+                    Get Started
+                </button>
+
+            </div>
+
+            <button
+                class="mobile-menu-btn"
+                onclick="toggleMobileMenu()"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+        <div
+            class="mobile-menu"
+            id="mobileMenu"
+        >
+
+            <a href="#how-it-works">
+                How It Works
+            </a>
+
+            <a href="#categories">
+                Categories
+            </a>
+
+            <a href="#business">
+                For Businesses
+            </a>
+
+            <a href="#drivers">
+                Become a Driver
+            </a>
+
+            <button
+                class="btn btn-primary"
+                onclick="openModal('loginModal')"
+            >
+                Log In
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-background"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="eyebrow">
+                        <span class="pulse-dot"></span>
+                        LOCAL DELIVERY, MADE SIMPLE
+                    </div>
+
+                    <h1>
+                        Everything You Need.
+                        <span>Delivered KWIK.</span>
+                    </h1>
+
+                    <p>
+                        Order from your favorite local stores and
+                        get everyday essentials delivered right to
+                        your door.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <button
+                            class="btn btn-primary btn-large"
+                            onclick="openModal('orderModal')"
+                        >
+                            Start Shopping
+                            <span>→</span>
+                        </button>
+
+                        <button
+                            class="btn btn-white btn-large"
+                            onclick="scrollToSection('how-it-works')"
+                        >
+                            How It Works
+                        </button>
+
+                    </div>
+
+                    <div class="hero-trust">
+
+                        <div class="trust-item">
+                            <strong>Fast</strong>
+                            <span>Local delivery</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <strong>Local</strong>
+                            <span>Nearby stores</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <strong>Easy</strong>
+                            <span>Simple ordering</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="delivery-card">
+
+                        <div class="delivery-top">
+
+                            <div class="delivery-icon">
+                                ⚡
+                            </div>
+
+                            <div>
+                                <span class="small-label">
+                                    DELIVERY STATUS
+                                </span>
+
+                                <h3>
+                                    On the way!
+                                </h3>
+                            </div>
+
+                            <span class="status-dot"></span>
+
+                        </div>
+
+                        <div class="delivery-progress">
+
+                            <div class="progress-line"></div>
+
+                            <div class="progress-step active">
+                                <span>✓</span>
+                                <small>Order</small>
+                            </div>
+
+                            <div class="progress-step active">
+                                <span>✓</span>
+                                <small>Store</small>
+                            </div>
+
+                            <div class="progress-step">
+                                <span>🚗</span>
+                                <small>Delivery</small>
+                            </div>
+
+                        </div>
+
+                        <div class="delivery-info">
+
+                            <div>
+                                <span>Estimated arrival</span>
+                                <strong>30–45 min</strong>
+                            </div>
+
+                            <div>
+                                <span>Delivery fee</span>
+                                <strong>From $2.99</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATEGORY SECTION
+        ========================== -->
+
+        <section
+            class="categories section"
+            id="categories"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="eyebrow">
+                        SHOP LOCAL
+                    </div>
+
+                    <h2>
+                        Your Favorites,
+                        Delivered
+                    </h2>
+
+                    <p>
+                        Browse local stores and get what you need
+                        without leaving home.
+                    </p>
+
+                </div>
+
+                <div class="category-grid">
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            🛒
+                        </div>
+
+                        <h3>
+                            Convenience
+                        </h3>
+
+                        <p>
+                            Snacks, drinks, groceries,
+                            household essentials and more.
+                        </p>
+
+                        <button
+                            onclick="openModal('orderModal')"
+                        >
+                            Shop Now →
+                        </button>
+
+                    </div>
+
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            🚬
+                        </div>
+
+                        <h3>
+                            Smoke Shops
+                        </h3>
+
+                        <p>
+                            Shop participating local smoke
+                            shops and specialty retailers.
+                        </p>
+
+                        <button
+                            onclick="openModal('ageModal')"
+                        >
+                            Browse Stores →
+                        </button>
+
+                    </div>
+
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            🥤
+                        </div>
+
+                        <h3>
+                            Drinks
+                        </h3>
+
+                        <p>
+                            Get your favorite beverages and
+                            refreshments delivered.
+                        </p>
+
+                        <button
+                            onclick="openModal('orderModal')"
+                        >
+                            Shop Drinks →
+                        </button>
+
+                    </div>
+
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            🏪
+                        </div>
+
+                        <h3>
+                            Local Stores
+                        </h3>
+
+                        <p>
+                            Discover businesses near you
+                            and support local retailers.
+                        </p>
+
+                        <button
+                            onclick="openModal('orderModal')"
+                        >
+                            Explore →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+
+        <section
+            class="how-it-works section"
+            id="how-it-works"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="eyebrow">
+                        SIMPLE & FAST
+                    </div>
+
+                    <h2>
+                        How KWIKBRING Works
+                    </h2>
+
+                    <p>
+                        From your favorite local store to your
+                        doorstep in just a few simple steps.
+                    </p>
+
+                </div>
+
+                <div class="steps-grid">
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <div class="step-icon">
+                            📍
+                        </div>
+
+                        <h3>
+                            Enter Your Location
+                        </h3>
+
+                        <p>
+                            Tell us where you want your order
+                            delivered.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <div class="step-icon">
+                            🛍️
+                        </div>
+
+                        <h3>
+                            Choose Your Store
+                        </h3>
+
+                        <p>
+                            Browse participating local stores
+                            and select your items.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <div class="step-icon">
+                            💳
+                        </div>
+
+                        <h3>
+                            Place Your Order
+                        </h3>
+
+                        <p>
+                            Review your order and complete
+                            checkout securely.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            04
+                        </div>
+
+                        <div class="step-icon">
+                            🚗
+                        </div>
+
+                        <h3>
+                            Get It Delivered
+                        </h3>
+
+                        <p>
+                            A KWIKBRING driver picks up and
+                            delivers your order.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BUSINESS SECTION
+        ========================== -->
+
+        <section
+            class="business section"
+            id="business"
+        >
+
+            <div class="container business-container">
+
+                <div class="business-content">
+
+                    <div class="eyebrow">
+                        FOR LOCAL BUSINESSES
+                    </div>
+
+                    <h2>
+                        Grow Your Business
+                        With KWIKBRING
+                    </h2>
+
+                    <p>
+                        Put your products in front of more local
+                        customers and offer convenient delivery
+                        without building your own delivery fleet.
+                    </p>
+
+                    <div class="business-features">
+
+                        <div>
+                            <span>✓</span>
+                            Reach more customers
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Accept delivery orders
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Manage your store online
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Local delivery network
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="btn btn-primary btn-large"
+                        onclick="openModal('merchantModal')"
+                    >
+                        Become a Partner
+                    </button>
+
+                </div>
+
+                <div class="business-visual">
+
+                    <div class="business-card">
+
+                        <div class="business-card-header">
+                            <span>KWIKBRING</span>
+                            <span>PARTNER</span>
+                        </div>
+
+                        <div class="business-chart">
+
+                            <div class="chart-bar bar-1"></div>
+                            <div class="chart-bar bar-2"></div>
+                            <div class="chart-bar bar-3"></div>
+                            <div class="chart-bar bar-4"></div>
+                            <div class="chart-bar bar-5"></div>
+
+                        </div>
+
+                        <div class="business-stats">
+
+                            <div>
+                                <strong>More Reach</strong>
+                                <span>Local customers</span>
+                            </div>
+
+                            <div>
+                                <strong>More Orders</strong>
+                                <span>Delivery enabled</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DRIVER SECTION
+        ========================== -->
+
+        <section
+            class="drivers section"
+            id="drivers"
+        >
+
+            <div class="container driver-container">
+
+                <div class="driver-visual">
+
+                    <div class="driver-circle">
+                        🚗
+                    </div>
+
+                    <div class="floating-card">
+                        <strong>
+                            Drive With KWIKBRING
+                        </strong>
+
+                        <span>
+                            Deliver locally.
+                            Earn on your schedule.
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="driver-content">
+
+                    <div class="eyebrow">
+                        BECOME A DRIVER
+                    </div>
+
+                    <h2>
+                        Drive When You Want.
+                        Earn On Your Schedule.
+                    </h2>
+
+                    <p>
+                        Join the KWIKBRING delivery network and
+                        deliver orders from local businesses to
+                        customers in your area.
+                    </p>
+
+                    <div class="driver-list">
+
+                        <div>
+                            <span>✓</span>
+                            Flexible schedule
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Choose when you drive
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Local delivery opportunities
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Easy driver onboarding
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="btn btn-primary btn-large"
+                        onclick="openModal('driverModal')"
+                    >
+                        Apply to Drive
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DOWNLOAD / CTA
+        ========================== -->
+
+        <section
+            class="download section"
+            id="download"
+        >
+
+            <div class="container">
+
+                <div class="download-box">
+
+                    <div class="eyebrow">
+                        KWIKBRING
+                    </div>
+
+                    <h2>
+                        Your Local Favorites.
+                        Coming Right to You.
+                    </h2>
+
+                    <p>
+                        KWIKBRING is building a faster,
+                        easier way to shop local.
+                    </p>
+
+                    <div class="download-buttons">
+
+                        <button
+                            class="store-button"
+                            onclick="openModal('comingSoonModal')"
+                        >
+                            <span class="store-icon">
+                                
+                            </span>
+
+                            <span>
+                                <small>
+                                    Coming soon on
+                                </small>
+
+                                <strong>
+                                    App Store
+                                </strong>
+                            </span>
+                        </button>
+
+
+                        <button
+                            class="store-button"
+                            onclick="openModal('comingSoonModal')"
+                        >
+                            <span class="store-icon">
+                                ▶
+                            </span>
+
+                            <span>
+                                <small>
+                                    Coming soon on
+                                </small>
+
+                                <strong>
+                                    Google Play
+                                </strong>
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <p class="small-note">
+                        Sign up to be notified when KWIKBRING
+                        launches in your area.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             AGE NOTICE
+        ========================== -->
+
+        <section class="age-notice">
+
+            <div class="container">
+
+                <div class="age-content">
+
+                    <div class="age-icon">
+                        21+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Age-Restricted Products
+                        </h3>
+
+                        <p>
+                            Certain products available through
+                            participating stores may require
+                            customers to be 21 or older.
+                            Valid government-issued ID and age
+                            verification may be required at
+                            checkout and delivery.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <img
+                    src="assets/kwikbring-logo.png"
+                    alt="KWIKBRING"
+                >
+
+                <p>
+                    Fast. Local. Delivered.
+                </p>
+
+                <p class="copyright">
+                    © 2026 KWIKBRING. All rights reserved.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    KWIKBRING
+                </h4>
+
+                <a href="#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="#categories">
+                    Categories
+                </a>
+
+                <a href="#download">
+                    Coming Soon
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Partners
+                </h4>
+
+                <a href="#business">
+                    Become a Merchant
+                </a>
+
+                <a href="#drivers">
+                    Become a Driver
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Support
+                </h4>
+
+                <a href="mailto:support@kwikbring.com">
+                    Contact Us
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms of Service
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         ORDER MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="orderModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close-modal"
+                onclick="closeModal('orderModal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                ⚡
+            </div>
+
+            <h2>
+                KWIKBRING Is Coming Soon
+            </h2>
+
+            <p>
+                We're working hard to bring fast local
+                delivery to your area.
+            </p>
+
+            <form
+                onsubmit="submitForm(event, 'Thanks! We will notify you when KWIKBRING launches.')"
+            >
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Notify Me
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         AGE MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="ageModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close-modal"
+                onclick="closeModal('ageModal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                21+
+            </div>
+
+            <h2>
+                Age Verification Required
+            </h2>
+
+            <p>
+                Some products offered by participating
+                retailers are age restricted. You must be
+                at least 21 years old to purchase these items.
+            </p>
+
+            <button
+                class="btn btn-primary"
+                onclick="closeModal('ageModal'); openModal('comingSoonModal')"
+            >
+                I Understand
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MERCHANT MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="merchantModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close-modal"
+                onclick="closeModal('merchantModal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                🏪
+            </div>
+
+            <h2>
+                Become a KWIKBRING Partner
+            </h2>
+
+            <p>
+                Tell us about your business and our team
+                will contact you.
+            </p>
+
+            <form
+                onsubmit="submitForm(event, 'Thank you! Our partnership team will contact you.')"
+            >
+
+                <input
+                    type="text"
+                    placeholder="Business Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Business Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Submit
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         DRIVER MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="driverModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close-modal"
+                onclick="closeModal('driverModal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                🚗
+            </div>
+
+            <h2>
+                Drive With KWIKBRING
+            </h2>
+
+            <p>
+                Join our driver waitlist and be notified
+                when driver applications open in your area.
+            </p>
+
+            <form
+                onsubmit="submitForm(event, 'You are on the KWIKBRING driver waitlist!')"
+            >
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Join Waitlist
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         LOGIN MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="loginModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close-modal"
+                onclick="closeModal('loginModal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                ⚡
+            </div>
+
+            <h2>
+                Welcome to KWIKBRING
+            </h2>
+
+            <p>
+                Customer accounts will be available when
+                KWIKBRING launches.
+            </p>
+
+            <button
+                class="btn btn-primary"
+                onclick="closeModal('loginModal'); openModal('comingSoonModal')"
+            >
+                Notify Me
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         COMING SOON MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="comingSoonModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close-modal"
+                onclick="closeModal('comingSoonModal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                ⚡
+            </div>
+
+            <h2>
+                Coming Soon
+            </h2>
+
+            <p>
+                KWIKBRING is preparing to launch.
+                Enter your email and we'll keep you updated.
+            </p>
+
+            <form
+                onsubmit="submitForm(event, 'You are on the KWIKBRING launch list!')"
+            >
+
+                <input
+                    type="email"
+                    placeholder="Your email address"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Keep Me Updated
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
